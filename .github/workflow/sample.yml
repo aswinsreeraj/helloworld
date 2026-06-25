@@ -1,0 +1,11 @@
+name: Sample pipeline
+
+on:
+	pull_request:
+		branch 'main'
+
+jobs: 
+	test:
+		runs-on: ubuntu-latest
+		steps:
+			- run: echo "Hello World"
