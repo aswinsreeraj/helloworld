@@ -2,7 +2,9 @@ name: Sample pipeline
 
 on:
 	pull_request:
-		branch 'main'
+		types: [opened, closed]
+		branch: 
+			- main
 
 jobs: 
 	test:
